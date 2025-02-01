@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Resume With UniquePath and Shareable Link:</h1>
+    <form id = "resume-form">
+        <!-- PERSONAL INFO -->
+        <fieldset>
+            <legend>
+                Personal Information
+            </legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for ="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter your email" required>
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" placeholder="Enter your number" required>
+            <label for ="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your current address" required>
+            <label for ="profilePic">Profile Picture</label>
+            <input type="file" id="profilePic" accept="image/*" required>
+            
+
+        </fieldset>
+        <br>
+        <!-- EDUCATION -->
+        <fieldset>
+            <legend>
+                Education
+            </legend>
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Enter your education" rows="4" required></textarea>
+        </fieldset>
+        <br>
+
+        <!-- skills -->
+        <fieldset>
+            <legend>
+                Skills
+            </legend>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Your skills" rows="4" required></textarea>
+        </fieldset>
+        <br>
+
+        <!-- Experience -->
+        <fieldset>
+            <legend>
+                Experience
+            </legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Share your experience" rows="4" required></textarea>
+        </fieldset>
+        <button type="submit">Generate Resume</button>
+    </form>
+     <br>
+
+     <!-- Dynamic Resume -->
+
+     <div id ="resume-display">
+
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
